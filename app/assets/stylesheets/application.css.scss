@@ -12,8 +12,11 @@
  *
  */
 
- /* Override styles of included dependencies */
+/* Override styles of included dependencies */
    @import 'foundation_and_overrides';
 
-  /* Styles for specific user interface elements */
+/* Custom Utilities Class */
+  @import 'utilities';
+
+/* Styles for specific user interface elements */
     @import 'components/hero_header';
