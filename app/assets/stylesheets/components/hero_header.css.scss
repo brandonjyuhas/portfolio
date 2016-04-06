@@ -22,4 +22,22 @@
     }
   }
 
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-top: rem-calc(20);
+
+    a {
+      display: inline-block;
+      color: $white;
+      text-decoration: none;
+      font-size: rem-calc(40);
+      width: rem-calc(250);
+      margin-right: rem-calc(5);
+
+      &:hover {
+        background: $primary-color;
+      }
+    }
+  }
 }
