@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'slim'
 gem 'pg'
+gem 'blogo'
 group :development, :test do
   gem 'byebug'
 end
