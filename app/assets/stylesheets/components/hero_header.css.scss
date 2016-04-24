@@ -10,15 +10,16 @@
     height: rem-calc(160);
   }
 
-  h4 {
+  &-name {
     color: $white;
+    font-size: 1.6em;
     &::after {
       content: '';
       display: block;
       background: white;
       height: 1px;
       width: 7%;
-      margin: 0 auto;
+      margin: 0 auto !important;
     }
   }
 

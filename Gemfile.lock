@@ -38,12 +38,19 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.8)
     arel (6.0.3)
+    bcrypt (3.1.11)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    blogo (0.1.4)
+      bcrypt (~> 3.0)
+      coffee-rails
+      jquery-rails
+      rails (~> 4.0)
+      sass-rails (>= 4)
     builder (3.2.2)
     byebug (8.2.0)
     capybara (2.5.0)
@@ -202,6 +209,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
+  blogo
   byebug
   capybara
   coffee-rails (~> 4.1.0)
