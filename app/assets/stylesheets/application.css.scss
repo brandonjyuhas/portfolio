@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require blogo/pure-min
  */
 
 /* Override styles of included dependencies */
@@ -22,5 +23,5 @@
     @import 'components/hero_header';
 
 /* Styles for Blogo */
-    @import 'blogo/blog';
     @import 'blogo/pure-min';
+    @import 'blogo/blog';

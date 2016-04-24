@@ -281,3 +281,11 @@ a.powered-by {
     text-decoration: underline;
   }
 }
+
+/* Overwrites to pure-paginator */
+.pure-paginator {
+  a.pure-button {
+    height: 42px !important;
+  }
+}
+
