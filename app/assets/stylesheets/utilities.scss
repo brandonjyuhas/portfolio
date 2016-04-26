@@ -1,0 +1,38 @@
+/* Utility classes to be used throughout the site */
+
+/* Margin sizing utility */
+$sizes:
+  "no" 0,
+  "xs" 0.5rem,
+  "s"  1rem,
+  "m"  2rem,
+  "l"  3rem;
+
+@each $el in $sizes {
+  $name:  nth($el, 1); // Eg: "s"
+  $value: nth($el, 2); // Eg: 1rem
+
+  .u-#{ $name }Margin {
+    margin: $value !important;
+  }
+  .u-#{ $name }MarginBottom {
+    margin-bottom: $value !important;
+  }
+  .u-#{ $name }MarginRight {
+    margin-right: $value !important;
+  }
+  .u-#{ $name }MarginLeft {
+    margin-left: $value !important;
+  }
+  .u-#{ $name }MarginTop {
+    margin-top: $value !important;
+  }
+}
+
+/* Depth utility */
+
+.u-with-depth {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+

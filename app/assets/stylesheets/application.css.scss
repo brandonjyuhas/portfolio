@@ -10,6 +10,18 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+ *= require blogo/pure-min
  */
+
+/* Override styles of included dependencies */
+   @import 'foundation_and_overrides';
+
+/* Custom Utilities Class */
+  @import 'utilities';
+
+/* Styles for specific user interface elements */
+    @import 'components/hero_header';
+
+/* Styles for Blogo */
+    @import 'blogo/pure-min';
+    @import 'blogo/blog';
