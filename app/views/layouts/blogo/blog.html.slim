@@ -18,17 +18,17 @@ body
   .Blogo.u-sMarginTop
     header.Blogo-header
       .Blogo-headerTitles
-        h1 = link_to "Blog", blogo_root_path
+        h1 = link_to "blog", blogo_root_path
 
       .Blogo-headerIcons
         = render partial: 'blogo/shared/social_icons'
 
     .Blogo-content
       .row
-        .small-8.columns
+        .small-9.columns
           = yield
 
-        .small-4.columns
+        .small-3.columns
           = render partial: 'blogo/shared/aside'
 
       .row

@@ -54,4 +54,49 @@ $blogo-width: 940px;
   &-content {
     padding: rem-calc(25);
   }
+
+  &-button {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .5em 1em;
+    text-decoration: none;
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+
+    &Active {
+      box-shadow: 0 0 45px 1px rgba(0,0,0,0.15) inset, 0 0 6px rgba(0,0,0,0.2) inset;
+    }
+  }
+
+  &-primaryButton {
+    background: #42b8dd;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &-tag {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &-paginator {
+    text-align: center;
+    li {
+      display: inline-block;
+      a {
+        padding: .8em 1.4em;
+        color: $black;
+      }
+    }
+  }
 }
