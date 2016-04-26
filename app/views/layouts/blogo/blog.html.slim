@@ -2,35 +2,35 @@ head
   title Brandon / Blog
   meta charset="UTF-8"
 
-  = render partial: 'blogo/shared/meta' 
+  = render partial: 'blogo/shared/meta'
 
   = csrf_meta_tags
   = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
   = javascript_include_tag 'vendor/modernizr'
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
 
-  = auto_discovery_link_tag :atom, blogo_feed_path 
-  = render 'blogo/shared/google_analytics' 
+  = auto_discovery_link_tag :atom, blogo_feed_path
+  = render 'blogo/shared/google_analytics'
 
 body
   header
     = render 'layouts/navigation'
-  #container.u-sMarginTop
-    header.blogo-header
+  .Blogo.u-sMarginTop
+    header.Blogo-header
       .header-titles
         h1 = link_to "Blog", blogo_root_path
 
       .header-icons
-        = render partial: 'blogo/shared/social_icons' 
-      
+        = render partial: 'blogo/shared/social_icons'
+
     #content
       .pure-g-r
         .pure-u-3-4
-          = yield 
+          = yield
 
         .pure-u-1-4
-          = render partial: 'blogo/shared/aside' 
+          = render partial: 'blogo/shared/aside'
 
       .pure-g-r
         .pure-u-1-1
-          = link_to "Powered by Blogo", Blogo::HOME_PAGE_URL, class: "powered-by" 
+          = link_to "Powered by Blogo", Blogo::HOME_PAGE_URL, class: "powered-by"
