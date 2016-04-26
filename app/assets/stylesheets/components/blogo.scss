@@ -43,34 +43,15 @@ $blogo-width: 940px;
   }
 
   &-headerTitles {
-      position: absolute;
-    }
-    &-headerIcons {
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-    }
-    .rss-icon, .twitter-icon, .github-icon {
-      display: inline-block;
-      width: 48px;
-      height: 48px;
-    }
-    .rss-icon {
-      background-image: image-url("blogo/rss-icon.png");
-      &:hover {
-        background-image: image-url("blogo/rss-icon-active.png");
-      }
-    }
-    .twitter-icon {
-      background-image: image-url("blogo/twitter-icon.png");
-      &:hover {
-        background-image: image-url("blogo/twitter-icon-active.png");
-      }
-    }
-    .github-icon {
-      background-image: image-url("blogo/github-icon.png");
-      &:hover {
-        background-image: image-url("blogo/github-icon-active.png");
-      }
-    }
+    position: absolute;
+  }
+  &-headerIcons {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  &-content {
+    padding: rem-calc(25);
+  }
 }
