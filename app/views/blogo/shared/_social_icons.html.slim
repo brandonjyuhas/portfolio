@@ -1,0 +1,8 @@
+- if Blogo.config.twitter_username
+  = link_to '',"https://twitter.com/#{Blogo.config.twitter_username}", class: 'Icon Icon-twitter', target: 'twitter'
+
+- if Blogo.config.github_username
+  = link_to '',"https://github.com/#{Blogo.config.github_username}", class: 'Icon Icon-github', target: 'github'
+
+- if Blogo.config.show_rss_icon
+  = link_to '', blogo_feed_path, class: 'Icon Icon-rss', target: 'rss'
