@@ -24,13 +24,12 @@ body
         = render partial: 'blogo/shared/social_icons'
 
     .Blogo-content
-      .pure-g-r
-        .pure-u-3-4
+      .row
+        .small-8.columns
           = yield
 
-        .pure-u-1-4
+        .small-4.columns
           = render partial: 'blogo/shared/aside'
 
-      .pure-g-r
-        .pure-u-1-1
-          = link_to "Powered by Blogo", Blogo::HOME_PAGE_URL, class: "powered-by"
+      .row
+        = link_to "Powered by Blogo", Blogo::HOME_PAGE_URL, class: "powered-by"
