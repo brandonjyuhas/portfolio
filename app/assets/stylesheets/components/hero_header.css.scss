@@ -1,6 +1,6 @@
 .HeroHeader {
   background-color: $dark-primary-color;
-  height: rem-calc(380);
+  min-height: rem-calc(380);
   text-align: center;
   padding: rem-calc(50) rem-calc(30);
   color: $white;
