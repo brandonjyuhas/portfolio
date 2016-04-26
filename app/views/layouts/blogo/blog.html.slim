@@ -1,10 +1,10 @@
 head
   title Brandon / Blog
   meta charset="UTF-8"
+  meta content=("text/html; charset=UTF-8") http-equiv="Content-Type"
+  meta content="width=device-width, initial-scale=1.0" name="viewport"
 
   = render partial: 'blogo/shared/meta'
-
-  = csrf_meta_tags
   = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
   = javascript_include_tag 'vendor/modernizr'
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -25,11 +25,11 @@ body
 
     .Blogo-content
       .row
-        .small-9.columns
-          = yield
-
-        .small-3.columns
+        .medium-3.medium-push-9.columns
           = render partial: 'blogo/shared/aside'
+
+        .medium-9.medium-pull-3.columns
+          = yield
 
       .row
         = link_to "Powered by Blogo", Blogo::HOME_PAGE_URL, class: "powered-by"
