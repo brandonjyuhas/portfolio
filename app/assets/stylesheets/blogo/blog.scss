@@ -3,21 +3,6 @@ $font: sans-serif;
 
 $link-color: #286790;
 
-#content {
-  padding: 25px;
-}
-
-#main {
-  padding-right: 40px;
-  .article-overview {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #aaaaaa;
-    &:last-child {
-      border-bottom: 0px;
-    }
-  }
-}
-
 #disqus-comments {
   margin-top: 30px;
   h1 {
@@ -167,4 +152,3 @@ a.powered-by {
     height: 42px !important;
   }
 }
-

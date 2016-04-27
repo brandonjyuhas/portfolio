@@ -136,4 +136,12 @@ $blogo-width: 940px;
       margin: 2px;
     }
   }
+
+  .article-overview {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #aaaaaa;
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
 }
