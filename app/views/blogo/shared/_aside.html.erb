@@ -16,7 +16,7 @@
   <header>
     <h1><%= t('blogo.user.tags') %></h1>
   </header>
-  <div class="tags">
+  <div class="text-center">
     <% @tags.each do |tag| %>
       <%= link_to tag.name, blogo_tag_path(tag), class: 'tag Blogo-button Blogo-primaryButton Blogo-tag' %>
     <% end %>
