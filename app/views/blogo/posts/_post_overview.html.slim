@@ -1,0 +1,7 @@
+section.blogo-article.article-overview
+  = render partial: 'blogo/posts/post_header', locals: { post: post }
+
+  .content
+    = raw post_overview(post)
+
+  = link_to t('blogo.user.read_post'), blogo_post_path(post), class: 'Blogo-button Blogo-primaryButton'

@@ -1,0 +1,16 @@
+header
+  h1
+    = link_to post.title, blogo_post_path(post)
+
+  .posted
+    span
+      = t('blogo.user.post_by')
+      '
+      = post.user.name
+      '  |
+      time datetime="#{post.published_at}"
+        = I18n.localize(post.published_at.to_date, format: :long)
+
+    .right
+      - post.tag_names.each do |tag_name|
+        = link_to tag_name, blogo_tag_path(tag_name), class: 'Blogo-button Blogo-primaryButton Blogo-tag'

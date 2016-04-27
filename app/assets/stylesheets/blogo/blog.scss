@@ -1,30 +1,7 @@
-/*= require application */
-/*= require blogo/pure-min */
-
 $width: 940px;
 $font: sans-serif;
 
 $link-color: #286790;
-
-body {
-  background: #f3f3f3;
-  background-image: image-url("blogo/background.png");
-}
-
-#content {
-  padding: 25px;
-}
-
-#main {
-  padding-right: 40px;
-  .article-overview {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #aaaaaa;
-    &:last-child {
-      border-bottom: 0px;
-    }
-  }
-}
 
 #disqus-comments {
   margin-top: 30px;
@@ -35,77 +12,6 @@ body {
   }
   a {
     color: $link-color;
-  }
-}
-
-#container {
-  margin: 0 auto;
-  max-width: $width;
-  background: white;
-  display: block;
-  box-shadow: 0px 0px 10px #aaaaaa;
-  .blogo-header {
-    background: #3d4f5d;
-    color: white;
-    padding: 10px 25px;
-    height: 80px;
-    position: relative;
-    h1 {
-      color: white;
-      font-size: 2em;
-      line-height: 1.5em;
-      margin: 4px 0px;
-      a {
-        text-decoration: none;
-        color: white;
-      }
-    }
-    h2 {
-      font-weight: 100;
-      margin: 3px 0px;
-      font-style: italic;
-      font-size: 1.2em;
-      line-height: 1em;
-      color: #b0cadb;
-    }
-    ul {
-      list-style: none;
-      li {
-        display: inline-block;
-        text-align: right;
-      }
-    }
-    .header-titles {
-      position: absolute;
-    }
-    .header-icons {
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-    }
-    .rss-icon, .twitter-icon, .github-icon {
-      display: inline-block;
-      width: 48px;
-      height: 48px;
-    }
-    .rss-icon {
-      background-image: image-url("blogo/rss-icon.png");
-      &:hover {
-        background-image: image-url("blogo/rss-icon-active.png");
-      }
-    }
-    .twitter-icon {
-      background-image: image-url("blogo/twitter-icon.png");
-      &:hover {
-        background-image: image-url("blogo/twitter-icon-active.png");
-      }
-    }
-    .github-icon {
-      background-image: image-url("blogo/github-icon.png");
-      &:hover {
-        background-image: image-url("blogo/github-icon-active.png");
-      }
-    }
   }
 }
 
@@ -168,48 +74,6 @@ body {
   img {
     border-radius: 0.3em;
   }
-}
-
-.article-tags {
-  float: right;
-}
-
-aside {
-  h1 {
-    background: #5b768b;
-    color: #dae1e7;
-    font-size: 1.2em;
-    margin-top: 30px;
-    padding: 10px;
-    border-radius: 8px 8px 0px 0px;
-    text-align: center;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-  }
-  a {
-    color: $link-color;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  .tag {
-    margin: 2px;
-  }
-}
-
-.tags {
-  text-align: center;
-}
-
-.tag {
-  display: inline-block;
-  position: relative;
-  font-size: 12px;
-  line-height: 14px;
 }
 
 .blogo-recent-posts li {
@@ -288,4 +152,3 @@ a.powered-by {
     height: 42px !important;
   }
 }
-

@@ -1,0 +1,147 @@
+$blogo-width: 940px;
+
+.Blogo {
+  margin: 0 auto;
+  max-width: $blogo-width;
+  background: $white;
+  display: block;
+  box-shadow: 0px 0px 10px #aaaaaa;
+
+  h1 {
+    margin: .5em 0;
+  }
+
+  p {
+      margin: 1em 0;
+  }
+
+  &-header {
+    background: #3d4f5d;
+    color: white;
+    padding: 10px 25px;
+    height: 80px;
+    position: relative;
+    h1 {
+      color: white;
+      font-size: 2em;
+      line-height: 1.5em;
+      margin: 4px 0px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    h2 {
+      font-weight: 100;
+      margin: 3px 0px;
+      font-style: italic;
+      font-size: 1.2em;
+      line-height: 1em;
+      color: #b0cadb;
+    }
+
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        text-align: right;
+      }
+    }
+  }
+
+  &-headerTitles {
+    position: absolute;
+  }
+  &-headerIcons {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  &-content {
+    padding: rem-calc(25);
+  }
+
+  &-button {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .5em 1em;
+    text-decoration: none;
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+
+    &Active {
+      box-shadow: 0 0 45px 1px rgba(0,0,0,0.15) inset, 0 0 6px rgba(0,0,0,0.2) inset;
+    }
+  }
+
+  &-primaryButton {
+    background: #42b8dd;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &-tag {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &-paginator {
+    text-align: center;
+    li {
+      display: inline-block;
+      a {
+        padding: .8em 1.4em;
+        color: $black;
+      }
+    }
+  }
+
+  aside {
+    h1 {
+      background: #5b768b;
+      color: #dae1e7;
+      font-size: 1.2em;
+      margin-top: 30px;
+      padding: 10px;
+      border-radius: 8px 8px 0px 0px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .tag {
+      margin: 2px;
+    }
+  }
+
+  .article-overview {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #aaaaaa;
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+}
