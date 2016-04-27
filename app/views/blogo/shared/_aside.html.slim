@@ -13,4 +13,4 @@ aside
       = t('blogo.user.tags')
   .text-center
     - @tags.each do |tag|
-      = link_to tag.name, blogo_tag_path(tag), class: 'tag Blogo-button Blogo-primaryButton Blogo-tag'
+      = link_to tag.name, blogo_tag_path(tag), class: 'Blogo-button Blogo-primaryButton tag'
