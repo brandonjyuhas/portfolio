@@ -10,7 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require blogo/pure-min
  */
 
 /* Override styles of included dependencies */
@@ -19,9 +18,14 @@
 /* Custom Utilities Class */
   @import 'utilities';
 
+/* Styles for Blogo */
+    @import 'blogo/blog';
+
 /* Styles for specific user interface elements */
     @import 'components/hero_header';
+    @import 'components/blogo';
+    @import 'components/icon';
 
-/* Styles for Blogo */
-    @import 'blogo/pure-min';
-    @import 'blogo/blog';
+body {
+    background-image: image-url("blogo/background.png");
+}
