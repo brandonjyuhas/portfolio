@@ -11,7 +11,7 @@
       </time>
     </span>
 
-    <div class="article-tags">
+    <div class="right">
       <% post.tag_names.each do |tag_name| %>
         <%= link_to tag_name, blogo_tag_path(tag_name), class: 'Blogo-button Blogo-primaryButton Blogo-tag' %>
       <% end %>
